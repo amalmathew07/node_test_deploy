@@ -5,7 +5,7 @@ var sum = (a,b) => {
 module.exports = {
     sum
 }
-
+const port = process.env.PORT || 4000;
 const express = require('express');
 
 var app = express();
@@ -14,4 +14,4 @@ app.get('/',(req,res) => {
     res.send("Hi");
 })
 
-app.listen(4000);
+app.listen(port);
