@@ -12,6 +12,10 @@ var app = express();
 
 app.get('/',(req,res) => {
     res.send("Hi");
-})
+});
+
+app.get('/user',(req,res) => {
+    res.send("Hi User");
+});
 
 app.listen(port);
